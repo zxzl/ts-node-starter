@@ -1,0 +1,18 @@
+version: "2"
+services:
+  node:
+    build: .
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env.production
+    command: yarn watch
+    volumes:
+      - ./src:/usr/app/src
+      - ./tsconfig.json:/usr/app/tsconfig.json
+  nginx:
+    image: nginx
+    volumes:
+      - ./conf/nginx.production.conf:/etc/nginx/nginx.conf
+    ports:
+      - "3000:3000"
