@@ -1,4 +1,4 @@
-version: "2"
+version: '2'
 services:
   node:
     build: .
@@ -10,9 +10,11 @@ services:
     volumes:
       - ./src:/usr/app/src
       - ./tsconfig.json:/usr/app/tsconfig.json
+    ports:
+      - '9229:9229'
   nginx:
     image: nginx
     volumes:
       - ./conf/nginx.development.conf:/etc/nginx/nginx.conf
     ports:
-      - "3000:3000"
+      - '3000:3000'

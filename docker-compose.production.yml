@@ -1,4 +1,4 @@
-version: "2"
+version: '2'
 services:
   node:
     build: .
@@ -12,4 +12,4 @@ services:
     volumes:
       - ./conf/nginx.production.conf:/etc/nginx/nginx.conf
     ports:
-      - "3000:3000"
+      - '3000:3000'
