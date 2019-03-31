@@ -1,26 +1,26 @@
 {
-    "name": "ts-node-starter",
-    "version": "1.0.0",
-    "main": "index.ts",
-    "license": "MIT",
-    "dependencies": {
-        "@types/node": "^11.12.2",
-        "koa": "^2.7.0",
-        "nodemon": "^1.18.10",
-        "ts-node": "^8.0.3",
-        "typescript": "^3.4.1"
-    },
-    "scripts": {
-        "serve": "ts-node src/index.ts",
-        "watch": "nodemon -e ts -w ./src -x node --inspect=0.0.0.0:9229 --nolazy -r ts-node/register ./src/index.ts",
-        "lint": "yarn eslint src/**/*.ts --fix"
-    },
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^1.5.0",
-        "@typescript-eslint/parser": "^1.5.0",
-        "eslint": "^5.16.0",
-        "eslint-config-prettier": "^4.1.0",
-        "eslint-plugin-prettier": "^3.0.1",
-        "prettier": "^1.16.4"
-    }
+  "name": "ts-node-starter",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^11.12.2",
+    "koa": "^2.7.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1"
+  },
+  "scripts": {
+    "serve": "ts-node src/index.ts",
+    "watch": "nodemon -e ts -w ./src -x node --inspect=0.0.0.0:9229 --nolazy -r ts-node/register ./src/index.ts",
+    "lint": "yarn eslint src/**/*.ts --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "@typescript-eslint/parser": "^1.5.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
 }
