@@ -6,10 +6,7 @@ services:
       - NODE_ENV=production
     env_file:
       - .env.production
-    command: yarn watch
-    volumes:
-      - ./src:/usr/app/src
-      - ./tsconfig.json:/usr/app/tsconfig.json
+    command: yarn serve
   nginx:
     image: nginx
     volumes:

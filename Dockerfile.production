@@ -1,0 +1,8 @@
+FROM node:11
+
+WORKDIR /usr/app
+COPY . /usr/app
+RUN yarn
+
+EXPOSE 3000
+CMD ["yarn", "serve"]
